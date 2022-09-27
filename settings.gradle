@@ -13,4 +13,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "JetPackComposePlayGround"
-include ':app'
+include ':app',':core-data'
+include ':core-datastore'
+include ':core-network'
