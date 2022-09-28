@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         gradlePluginPortal()
         google()
@@ -13,6 +14,10 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "JetPackComposePlayGround"
-include ':app',':core-data'
-include ':core-datastore'
-include ':core-network'
+include (
+    ":app",
+    ":core-data",
+    ":core-datastore",
+    ":core-network"
+)
+
