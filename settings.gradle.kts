@@ -16,8 +16,8 @@ dependencyResolutionManagement {
 rootProject.name = "JetPackComposePlayGround"
 include (
     ":app",
-    ":core-data",
-    ":core-datastore",
-    ":core-network"
+//    ":core-data",
+//    ":core-datastore",
+//    ":core-network"
 )
 

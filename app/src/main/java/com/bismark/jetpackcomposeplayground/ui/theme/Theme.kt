@@ -1,3 +1,4 @@
+/*
 package com.bismark.jetpackcomposeplayground.ui.theme
 
 import android.os.Build
@@ -13,9 +14,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 
+*/
 /**
  * Light default theme color scheme
- **/
+ **//*
+
 private val LightDefaultColorScheme = lightColorScheme(
     primary = Purple40,
     onPrimary = Color.White,
@@ -42,9 +45,11 @@ private val LightDefaultColorScheme = lightColorScheme(
     outline = PurpleGray50
 )
 
+*/
 /**
  * Dark default theme color scheme
- */
+ *//*
+
 private val DarkDefaultColorScheme = darkColorScheme(
     primary = Purple80,
     onPrimary = Purple20,
@@ -71,9 +76,11 @@ private val DarkDefaultColorScheme = darkColorScheme(
     outline = PurpleGray60
 )
 
+*/
 /**
  * Light Android theme color scheme
- */
+ *//*
+
 private val LightAndroidColorScheme = lightColorScheme(
     primary = Green40,
     onPrimary = Color.White,
@@ -100,9 +107,11 @@ private val LightAndroidColorScheme = lightColorScheme(
     outline = GreenGray50
 )
 
+*/
 /**
  * Dark Android theme color scheme
- */
+ *//*
+
 private val DarkAndroidColorScheme = darkColorScheme(
     primary = Green80,
     onPrimary = Green20,
@@ -129,6 +138,7 @@ private val DarkAndroidColorScheme = darkColorScheme(
     outline = GreenGray60
 )
 
+*/
 /**
  * Now in Android theme.
  *
@@ -139,7 +149,8 @@ private val DarkAndroidColorScheme = darkColorScheme(
  * @param darkTheme Whether the theme should use a dark color scheme (follows system by default).
  * @param dynamicColor Whether the theme should use a dynamic color scheme (Android 12+ only).
  * @param androidTheme Whether the theme should use the Android theme color scheme.
- */
+ *//*
+
 @Composable
 fun JPGTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
@@ -196,3 +207,4 @@ fun JPGTheme(
     }
 }
 
+*/

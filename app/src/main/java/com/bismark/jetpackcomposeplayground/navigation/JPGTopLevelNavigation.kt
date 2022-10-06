@@ -1,10 +1,6 @@
 package com.bismark.jetpackcomposeplayground.navigation
 
-import androidx.compose.material.icons.Icons
-import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.navigation.NavController
-import androidx.navigation.NavGraph.Companion.findStartDestination
-import androidx.navigation.NavHostController
+//import com.bismark.jetpackcomposeplayground.navigation.feature.ForYouDestination
 
 /**
  * Routes for the different top level destinations in the application. Each of these destinations
@@ -15,6 +11,7 @@ import androidx.navigation.NavHostController
 /**
  * Models the navigation top level actions in the app.
  */
+/*
 class JPGTopLevelNavigation(val navController: NavHostController){
 
     fun navigateTo(destination: TopLevelDestination){
@@ -58,3 +55,4 @@ val TOP_LEVEL_DESTINATIONS = listOf(
         iconTextId = interests
     )
 )
+*/

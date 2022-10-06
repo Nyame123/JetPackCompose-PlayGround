@@ -1,8 +1,8 @@
 plugins {
-    id ("com.android.application")
+    id ("jpg.android.application")
     id ("org.jetbrains.kotlin.android")
     id ("kotlin-kapt")
-    id ("dagger.hilt.android.plugin")
+    //id ("dagger.hilt.android.plugin")
 }
 
 android {
@@ -37,27 +37,23 @@ android {
 }
 
 dependencies {
-    val nav_version = "2.5.2"
-    implementation("androidx.core:core-ktx:1.9.0")
-    implementation ("androidx.appcompat:appcompat:1.5.1")
-    implementation ("com.google.android.material:material:1.6.1")
-    implementation ("androidx.constraintlayout:constraintlayout:2.1.4")
 
-    //navigation library regular navigation
-    implementation("androidx.navigation:navigation-fragment-ktx:2.5.2")
-    implementation("androidx.navigation:navigation-ui-ktx:2.5.2")
-    //navigation library compose
-    implementation("androidx.navigation:navigation-compose:$nav_version")
+    implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.window.manager)
+    implementation(libs.androidx.profileinstaller)
+
+    //Coil
+    implementation(libs.coil.kt)
+    implementation(libs.coil.kt.svg)
 
     //hilt
-    implementation("com.google.dagger:hilt-android:2.42")
-    kapt("com.google.dagger:hilt-compiler:2.41")
+    //implementation(libs.hilt)
+   // kapt(libs.hilt.compiler)
+   // kaptAndroidTest(libs.hilt.compiler)
 
     //compose material design 3
-    implementation("androidx.compose.material3:material3:1.0.0-beta03")
-    implementation("androidx.compose.material3:material3-window-size-class:1.0.0-beta03")
-
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.3")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
+    implementation(libs.material3)
+    implementation(libs.androidx.compose.material3.windowSizeClass)
 }
