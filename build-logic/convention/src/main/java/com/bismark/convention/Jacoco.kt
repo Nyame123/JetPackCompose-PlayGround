@@ -65,5 +65,4 @@ fun Project.configureJacoco(
             excludes = listOf("jdk.internal.*")
         }
     }
-
 }

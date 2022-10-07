@@ -1,8 +1,11 @@
 plugins {
-    id ("jpg.android.application")
-    id ("org.jetbrains.kotlin.android")
-    id ("kotlin-kapt")
-    //id ("dagger.hilt.android.plugin")
+    id("jpg.android.application")
+    id("jpg.android.application.compose")
+    id("jpg.android.application.jacoco")
+    kotlin("kapt")
+    id("jacoco")
+    id("dagger.hilt.android.plugin")
+    id("jpg.spotless")
 }
 
 android {
@@ -38,6 +41,9 @@ android {
 
 dependencies {
 
+    implementation(project(":core-navigation"))
+    implementation(project(":feature-foryou"))
+
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.core.ktx)
@@ -49,11 +55,19 @@ dependencies {
     implementation(libs.coil.kt.svg)
 
     //hilt
-    //implementation(libs.hilt)
-   // kapt(libs.hilt.compiler)
-   // kaptAndroidTest(libs.hilt.compiler)
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.compiler)
+    kaptAndroidTest(libs.hilt.compiler)
 
     //compose material design 3
     implementation(libs.material3)
     implementation(libs.androidx.compose.material3.windowSizeClass)
+
+    configurations.configureEach {
+        resolutionStrategy {
+            force(libs.junit4)
+            // Temporary workaround for https://issuetracker.google.com/174733673
+            force("org.objenesis:objenesis:2.6")
+        }
+    }
 }
