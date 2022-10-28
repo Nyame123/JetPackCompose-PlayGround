@@ -25,5 +25,8 @@ include (
     ":core-ui",
     ":core-testing",
     ":feature-interests",
-    ":core-common"
+    ":core-common",
+    ":core-database",
+    ":core-datastore-testing"
 )
+include(":core-datastore-test")

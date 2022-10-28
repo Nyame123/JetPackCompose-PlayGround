@@ -1,40 +1,32 @@
 plugins {
-    id("com.android.library")
-    id("org.jetbrains.kotlin.android")
-}
-
-android {
-    compileSdk = 32
-
-    defaultConfig {
-        minSdk = 21
-        targetSdk = 32
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles("consumer-rules.pro")
-    }
-
-    buildTypes {
-        release {
-            isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-        }
-    }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
+    id("jpg.android.library")
+    id("jpg.android.library.compose")
+    id("jpg.android.library.jacoco")
+    id("jpg.spotless")
 }
 
 dependencies {
+    implementation(project(":core-model"))
 
-    implementation("androidx.core:core-ktx:1.7.0")
-    implementation("androidx.appcompat:appcompat:1.5.1")
-    implementation("com.google.android.material:material:1.6.1")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.3")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.coil.kt)
+    implementation(libs.coil.kt.compose)
+    implementation(libs.kotlinx.datetime)
+
+    // TODO : Remove these dependency once we upgrade to Android Studio Dolphin b/228889042
+    // These dependencies are currently necessary to render Compose previews
+    debugImplementation(libs.androidx.customview.poolingcontainer)
+    debugImplementation(libs.androidx.lifecycle.viewModelCompose)
+    debugImplementation(libs.androidx.savedstate.ktx)
+
+    api(libs.androidx.compose.foundation)
+    api(libs.androidx.compose.foundation.layout)
+    api(libs.androidx.compose.material.iconsExtended)
+    api(libs.androidx.compose.material3)
+
+    debugApi(libs.androidx.compose.ui.tooling)
+    api(libs.androidx.compose.ui.tooling.preview)
+    api(libs.androidx.compose.ui.util)
+    api(libs.androidx.compose.runtime)
+    api(libs.androidx.compose.runtime.livedata)
 }

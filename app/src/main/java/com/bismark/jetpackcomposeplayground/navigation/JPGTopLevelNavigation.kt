@@ -3,7 +3,6 @@ package com.bismark.jetpackcomposeplayground.navigation
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
-import com.bismark.feature.foryou.navigation.ForYouDestination
 
 /**
  * Routes for the different top level destinations in the application. Each of these destinations
