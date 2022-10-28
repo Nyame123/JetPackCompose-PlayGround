@@ -6,8 +6,12 @@
         <entry key="../../../../../layout/compose-model-1666648955795.xml" value="0.1" />
         <entry key="../../../../../layout/compose-model-1666651935436.xml" value="0.1132943143812709" />
         <entry key="../../../../../layout/compose-model-1666955350323.xml" value="0.1" />
+        <entry key="../../../../../layout/compose-model-1666983482789.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.11458333333333333" />
+        <entry key="core-ui/src/main/res/drawable/ic_bookmark.xml" value="0.1255" />
+        <entry key="core-ui/src/main/res/drawable/ic_placeholder_default.xml" value="0.1255" />
+        <entry key="core-ui/src/main/res/drawable/ic_upcoming.xml" value="0.1255" />
       </map>
     </option>
   </component>

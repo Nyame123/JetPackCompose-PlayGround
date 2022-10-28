@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bookmark">Bookmark</string>
+    <string name="unbookmark">Unbookmark</string>
+    <string name="back">Back</string>
+    <string name="card_tap_action">Open Resource Link</string>
+    <string name="top_app_bar_preview_title">Title</string>
+</resources>
