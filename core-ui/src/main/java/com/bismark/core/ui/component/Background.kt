@@ -1,4 +1,4 @@
-package com.bismark.core.ui.icons.component
+package com.bismark.core.ui.component
 
 import android.content.res.Configuration
 import androidx.compose.foundation.layout.Box
