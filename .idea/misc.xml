@@ -9,8 +9,10 @@
         <entry key="../../../../../layout/compose-model-1666983482789.xml" value="0.1" />
         <entry key="../../../../../layout/compose-model-1667121385096.xml" value="0.1" />
         <entry key="../../../../../layout/compose-model-1667137339681.xml" value="0.22930743243243243" />
+        <entry key="../../../../../layout/compose-model-1667317328329.xml" value="0.24074074074074073" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.11458333333333333" />
+        <entry key="core-common/src/main/res/drawable-anydpi-v24/ic_nia_notification.xml" value="0.13" />
         <entry key="core-ui/src/main/res/drawable/ic_bookmark.xml" value="0.1255" />
         <entry key="core-ui/src/main/res/drawable/ic_placeholder_default.xml" value="0.1255" />
         <entry key="core-ui/src/main/res/drawable/ic_upcoming.xml" value="0.1255" />

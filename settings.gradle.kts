@@ -30,3 +30,5 @@ include (
     ":core-datastore-testing"
 )
 include(":core-datastore-test")
+include(":feature-topic")
+include(":sync")
