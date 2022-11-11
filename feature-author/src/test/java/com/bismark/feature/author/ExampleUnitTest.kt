@@ -1,4 +1,4 @@
-package com.bismark.feature.topic
+package com.bismark.feature.author
 
 import org.junit.Test
 

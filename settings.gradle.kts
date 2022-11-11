@@ -32,3 +32,4 @@ include (
 include(":core-datastore-test")
 include(":feature-topic")
 include(":sync")
+include(":feature-author")

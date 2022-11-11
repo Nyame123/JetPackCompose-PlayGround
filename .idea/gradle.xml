@@ -37,6 +37,7 @@
             <option value="$PROJECT_DIR$/core-network" />
             <option value="$PROJECT_DIR$/core-testing" />
             <option value="$PROJECT_DIR$/core-ui" />
+            <option value="$PROJECT_DIR$/feature-author" />
             <option value="$PROJECT_DIR$/feature-foryou" />
             <option value="$PROJECT_DIR$/feature-interests" />
             <option value="$PROJECT_DIR$/feature-topic" />
