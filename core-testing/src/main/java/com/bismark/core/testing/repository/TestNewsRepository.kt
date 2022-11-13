@@ -4,7 +4,7 @@ import com.bismark.core.model.Author
 import com.bismark.core.model.NewsResource
 import com.bismark.core.model.Topic
 import com.bismark.core_data.Synchronizer
-import com.bismark.core_data.repository.NewsRepository
+import com.bismark.core_data.data.repository.NewsRepository
 import kotlinx.coroutines.channels.BufferOverflow
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableSharedFlow

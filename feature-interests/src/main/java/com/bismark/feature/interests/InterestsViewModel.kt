@@ -4,8 +4,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.bismark.core.model.FollowableAuthor
 import com.bismark.core.model.FollowableTopic
-import com.bismark.core_data.repository.AuthorsRepository
-import com.bismark.core_data.repository.TopicsRepository
+import com.bismark.core_data.data.repository.AuthorsRepository
+import com.bismark.core_data.data.repository.TopicsRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted

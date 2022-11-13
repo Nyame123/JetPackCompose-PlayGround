@@ -8,8 +8,8 @@ import com.bismark.core.common.result.asResult
 import com.bismark.core.model.FollowableTopic
 import com.bismark.core.model.NewsResource
 import com.bismark.core.model.Topic
-import com.bismark.core_data.repository.NewsRepository
-import com.bismark.core_data.repository.TopicsRepository
+import com.bismark.core_data.data.repository.NewsRepository
+import com.bismark.core_data.data.repository.TopicsRepository
 import com.bismark.feature.topic.navigation.TopicDestination
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow

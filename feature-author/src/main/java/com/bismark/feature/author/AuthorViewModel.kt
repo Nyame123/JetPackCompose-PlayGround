@@ -8,8 +8,8 @@ import com.bismark.core.common.result.asResult
 import com.bismark.core.model.Author
 import com.bismark.core.model.FollowableAuthor
 import com.bismark.core.model.NewsResource
-import com.bismark.core_data.repository.AuthorsRepository
-import com.bismark.core_data.repository.NewsRepository
+import com.bismark.core_data.data.repository.AuthorsRepository
+import com.bismark.core_data.data.repository.NewsRepository
 import com.bismark.feature.author.navigation.AuthorDestination
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow

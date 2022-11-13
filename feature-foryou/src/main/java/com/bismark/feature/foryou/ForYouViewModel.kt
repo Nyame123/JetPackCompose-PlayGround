@@ -12,9 +12,9 @@ import com.bismark.core.model.FollowableAuthor
 import com.bismark.core.model.FollowableTopic
 import com.bismark.core.model.NewsResource
 import com.bismark.core.model.SaveableNewsResource
-import com.bismark.core_data.repository.AuthorsRepository
-import com.bismark.core_data.repository.NewsRepository
-import com.bismark.core_data.repository.TopicsRepository
+import com.bismark.core_data.data.repository.AuthorsRepository
+import com.bismark.core_data.data.repository.NewsRepository
+import com.bismark.core_data.data.repository.TopicsRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.SharingStarted
@@ -22,7 +22,6 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.filterNot
 import kotlinx.coroutines.flow.flatMapLatest
-import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onStart

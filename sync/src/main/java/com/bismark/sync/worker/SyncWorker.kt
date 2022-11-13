@@ -10,9 +10,9 @@ import androidx.work.WorkerParameters
 import com.bismark.core.common.network.di.Dispatcher
 import com.bismark.core.common.network.di.JPGDispatchers
 import com.bismark.core_data.Synchronizer
-import com.bismark.core_data.repository.AuthorsRepository
-import com.bismark.core_data.repository.NewsRepository
-import com.bismark.core_data.repository.TopicsRepository
+import com.bismark.core_data.data.repository.AuthorsRepository
+import com.bismark.core_data.data.repository.NewsRepository
+import com.bismark.core_data.data.repository.TopicsRepository
 import com.bismark.core_datastore.ChangeListVersions
 import com.bismark.core_datastore.JPGPreferences
 import com.bismark.sync.initializer.SyncConstraints

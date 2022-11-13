@@ -2,7 +2,7 @@ package com.bismark.core.testing.repository
 
 import com.bismark.core.model.Topic
 import com.bismark.core_data.Synchronizer
-import com.bismark.core_data.repository.TopicsRepository
+import com.bismark.core_data.data.repository.TopicsRepository
 import kotlinx.coroutines.channels.BufferOverflow
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableSharedFlow
