@@ -27,10 +27,11 @@ include (
     ":feature-interests",
     ":core-common",
     ":core-database",
-    ":core-datastore-testing"
+    ":core-data-test",
+    ":core-datastore-test",
+    ":feature-topic",
+    ":sync",
+    ":feature-author",
+    ":app_jpg_catalog"
+
 )
-include(":core-datastore-test")
-include(":feature-topic")
-include(":sync")
-include(":feature-author")
-include(":app_jpg_catalog")

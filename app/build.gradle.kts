@@ -13,37 +13,64 @@ android {
 
     defaultConfig {
         applicationId = "com.bismark.jetpackcomposeplayground"
-        minSdk = 23
-        targetSdk = 32
         versionCode = 1
-        versionName = "1.0"
+        versionName = "0.0.1" // X.Y.Z; X = Major, Y = minor, Z = Patch level
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        // Custom test runner to set up Hilt dependency graph
+        testInstrumentationRunner = "com.bismark.core.testing.JPGTestRunner"
+        vectorDrawables {
+            useSupportLibrary = true
+        }
     }
 
     buildTypes {
-        release {
-            isMinifyEnabled =  false
+        val debug by getting {
+            applicationIdSuffix = ".debug"
+        }
+        val release by getting {
+            isMinifyEnabled = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
+        val benchmark by creating {
+            initWith(release)
+            signingConfig = signingConfigs.getByName("debug")
+            matchingFallbacks.add("release")
+            proguardFiles("benchmark-rules.pro")
+        }
+        val staging by creating {
+            initWith(debug)
+            signingConfig = signingConfigs.getByName("debug")
+            matchingFallbacks.add("debug")
+            applicationIdSuffix = ".staging"
+        }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+    packagingOptions {
+        resources {
+            excludes.add("/META-INF/{AL2.0,LGPL2.1}")
+        }
     }
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
-    buildFeatures {
-        viewBinding = true
+    testOptions {
+        unitTests {
+            isIncludeAndroidResources = true
+        }
     }
 }
 
 dependencies {
-
-    implementation(project(":core-navigation"))
-    implementation(project(":core-ui"))
+    implementation(project(":feature-author"))
+    implementation(project(":feature-interests"))
     implementation(project(":feature-foryou"))
+    implementation(project(":feature-topic"))
+
+    implementation(project(":core-ui"))
+    implementation(project(":core-navigation"))
+
+    implementation(project(":sync"))
+
+    androidTestImplementation(project(":core-testing"))
+    androidTestImplementation(project(":core-datastore-test"))
+    androidTestImplementation(project(":core-data-test"))
+    androidTestImplementation(project(":core-network"))
 
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.appcompat)

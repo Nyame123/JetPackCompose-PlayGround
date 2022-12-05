@@ -1,8 +1,15 @@
 package com.bismark.jetpackcomposeplayground.navigation
 
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Grid3x3
+import androidx.compose.material.icons.filled.Upcoming
+import androidx.compose.material.icons.outlined.Grid3x3
+import androidx.compose.material.icons.outlined.Upcoming
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
+import com.bismark.feature.foryou.navigation.ForYouDestination
+import com.bismark.feature.interests.navigation.InterestsDestination
 
 /**
  * Routes for the different top level destinations in the application. Each of these destinations
@@ -43,17 +50,17 @@ data class TopLevelDestination(
     val iconTextId: Int
 )
 
-/*val TOP_LEVEL_DESTINATIONS = listOf(
+val TOP_LEVEL_DESTINATIONS = listOf(
     TopLevelDestination(
         route = ForYouDestination.route,
         selectedIcon = Icons.Filled.Upcoming,
         unselectedIcon = Icons.Outlined.Upcoming,
-        iconTextId = for_you
+        iconTextId = com.bismark.feature.foryou.R.string.for_you
     ),
     TopLevelDestination(
         route = InterestsDestination.route,
         selectedIcon = Icons.Filled.Grid3x3,
         unselectedIcon = Icons.Outlined.Grid3x3,
-        iconTextId = interests
+        iconTextId = com.bismark.feature.interests.R.string.interests
     )
-)*/
+)
