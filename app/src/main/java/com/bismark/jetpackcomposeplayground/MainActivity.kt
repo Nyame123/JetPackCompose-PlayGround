@@ -10,7 +10,10 @@ import androidx.compose.material3.windowsizeclass.WindowSizeClass
 import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
 import androidx.core.view.WindowCompat
 import com.bismark.jetpackcomposeplayground.ui.JPGApp
+import dagger.hilt.android.AndroidEntryPoint
+
 @OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

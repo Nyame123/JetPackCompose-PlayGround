@@ -4,6 +4,7 @@ import androidx.compose.material3.windowsizeclass.WindowSizeClass
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import com.bismark.core.navigation.JPGNavigationDestination
+import com.bismark.feature.foryou.ForYouRoute
 
 object ForYouDestination : JPGNavigationDestination {
 
@@ -15,6 +16,6 @@ fun NavGraphBuilder.forYouGraph(
     windowSizeClass: WindowSizeClass
 ){
     composable(route = ForYouDestination.route){
-
+        ForYouRoute(windowSizeClass)
     }
 }
